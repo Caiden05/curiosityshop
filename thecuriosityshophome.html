@@ -1,0 +1,170 @@
+<!-- Caiden Edwards 657 170 577 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosity Shop</title>
+    <style type="text/css">
+        #header {
+            font-size: 36px;
+            color: #999999;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 150px;
+            padding-top: 30px;
+            border-bottom: #888 thin solid;
+        }
+
+        #col1 {
+            color: #555;
+        }
+
+        .col {
+            width: 380px;
+            height: 500px;
+            margin: 18px;
+            float: right;
+            font-size: 12px;
+            color: #555;
+        }
+        body {
+            background-image: url(img/logo_for_website.png), url(img/texture1.jpg);
+            background-repeat: no-repeat, repeat;
+            background-attachment: fixed, scroll;
+            background-size: 400px, auto;
+            background-position: right bottom, center;
+            margin: 0px;
+        }
+
+        #colorBar {
+            height: 620px;
+            width: 250px;
+            float: right;
+        }
+        .navbar {
+            background-color: #003B5C;
+            border-radius: 30px;
+            position: sticky;
+            top: 20px;
+        }
+        .navbar ul {
+            overflow: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+        }
+        .navbar li {
+            list-style: none;
+            margin: 15px 20px;
+        }
+        .navbar li a {
+            padding: 3px 4px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar :hover {
+           color:  #eee666 
+        }
+        .navbar :active {
+            color:  #ff0000;
+        }
+        .navbar li.D20 {
+            margin-left: auto;
+        }
+        .container {
+            max-width: 1350px;
+            padding: 0px 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <nav class="navbar" style="text-rendering: geometricPrecision;">
+        <ul>
+            <li><a href="thecuriosityshophome.html">Home</a></li>
+            <li><a href="thecuriosityshopabout.html">About</a></li>
+            <li><a href="thecuriosityshopservices.html">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="D20">
+                <img src="img/cool-d20" alt="D20" height="55px" width="55px">
+            </li>
+        </ul>
+    </nav>
+    <div id="header">Welcome to The Curiosity Shop</div>
+    <div class="col" style="font-size: xxx-large; font-style: italic; font-weight: bold;"> Custom Art, Stickers, Dice</div>
+    <div style="position: fixed; float: center;"> 
+    <div>
+        <p id="demo"></p>
+        <img id="myImg" src="" width="30%" height="auto"></br>
+        <button onclick="clickevent()" float="center">Roll Until Your Curiosity's Content! D12</button>
+        </div>
+        <script>
+            var para;
+            var rannum;
+            function clickevent(){
+            rannum = Math.floor(Math.random() * 12) + 1;
+            para = document.getElementById("demo");
+            
+            para.innerHTML = rannum;
+    
+            if(rannum==1){
+                document.getElementById("myImg").src = "img/cheflink.jpg";
+            }
+            if(rannum==2){
+                document.getElementById("myImg").src = "img/moonblade.jpg";
+            }
+            if(rannum==3){
+                document.getElementById("myImg").src = "img/toughscale.jpg";
+            }
+            if(rannum==4){
+                document.getElementById("myImg").src = "img/shrigma.jpg";
+            }
+            if(rannum==5){
+                document.getElementById("myImg").src = "img/mermaid.jpg";
+            }
+            if(rannum==6){
+                document.getElementById("myImg").src = "img/cyfae.jpg";
+            }
+            if(rannum==7){
+                document.getElementById("myImg").src = "img/hornelf.jpg"
+            }
+            if(rannum==8){
+                document.getElementById("myImg").src = "img/darkknifeear.jpg"
+            }
+            if(rannum==9){
+                document.getElementById("myImg").src = "img/synthsmile.jpg"
+            }
+            if(rannum==10){
+                document.getElementById("myImg").src = "img/skulltat.jpg"
+            }
+            if(rannum==11){
+                document.getElementById("myImg").src = "img/mountscene.jpg"
+            }
+            if(rannum==12){
+                document.getElementById("myImg").src = "img/poyo.jpg"
+            }
+        }
+        </script>
+    </div>
+    <div class="col" style="font-size: x-large;">
+        <img src="img/cloud_back" alt="Road to enlightenment" width="400" height="120"> <br>
+        Custom hand-drawn art commisons available for any kind of need. 
+        <p>
+        The Curiosity shop is dedicated to providing a space for those curious about turning their ideas into digital art without
+        the assistance of AI in order to preserve the practice of hand-drawn art and the relationship between the art, and artist.
+        </p>
+        <p>
+        We also offer custom D&D dice, and stickers. 
+        </p> 
+        The only limitation is your mind, get a free consultation about your inquires by contacting us.
+    </div>
+    </div>
+</div>
+</body>
+
+</html>
